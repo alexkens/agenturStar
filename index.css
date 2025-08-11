@@ -1,6 +1,7 @@
 :root {
     --primary-color: #004aad;
     --secondary-color: goldenrod;
+    --tertiary-color: #333333;
     --main-font-family: arial, sans-serif;
     --body-bg-color: rgb(240,240,240);
 }
@@ -12,6 +13,8 @@ html {
 body {
     background-color: var(--body-bg-color);
     font-family: var(--main-font-family);
+    height: 100%;
+    margin: 2% auto;
 }
 
 nav, footer {
@@ -47,6 +50,31 @@ h3 {
     color: var(--secondary-color)
 }
 
-.hero > p {
+.hero-head > p {
     color: black;
+}
+
+.hero-head {
+    text-align: center;
+    color: black;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.h3-cards {
+    display: flex;
+    margin: 3%; 
+}
+
+.h3-cards div > p {
+    color: white;
+}
+
+.card {
+    text-align: center;
+    border-radius: 45px;
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
