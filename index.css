@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #004aad;
+    --secondary-color: goldenrod;
+    --main-font-family: arial, sans-serif;
+    --body-bg-color: rgb(240,240,240);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+nav, footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav > a,
+footer > a, p {
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+nav > a:hover,
+footer > a:hover {
+    color: white;
+}
