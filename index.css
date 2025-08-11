@@ -11,21 +11,42 @@ html {
 
 body {
     background-color: var(--body-bg-color);
+    font-family: var(--main-font-family);
 }
 
 nav, footer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+
+    background-color: var(--primary-color);
 }
 
 nav > a,
 footer > a, p {
     font-size: 25px;
     color: var(--secondary-color);
+
+    margin: 1%;
 }
 
 nav > a:hover,
 footer > a:hover {
     color: white;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+h3 {
+    color: var(--secondary-color)
+}
+
+.hero > p {
+    color: black;
 }
