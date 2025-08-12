@@ -1,3 +1,7 @@
+/*
+css file for body, nav, footer and main styles
+*/
+
 :root {
     --primary-color: #004aad;
     --secondary-color: goldenrod;
@@ -38,6 +42,10 @@ footer > a:hover {
     color: white;
 }
 
+footer > p {
+    color: var(--secondary-color);
+}
+
 h1 {
     font-size: 50px;
 }
@@ -48,33 +56,4 @@ h1, h2 {
 
 h3 {
     color: var(--secondary-color)
-}
-
-.hero-head > p {
-    color: black;
-}
-
-.hero-head {
-    text-align: center;
-    color: black;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.h3-cards {
-    display: flex;
-    margin: 3%; 
-}
-
-.h3-cards div > p {
-    color: white;
-}
-
-.card {
-    text-align: center;
-    border-radius: 45px;
-    margin: 5px;
-    padding: 10px;
-    background-color: var(--primary-color);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
