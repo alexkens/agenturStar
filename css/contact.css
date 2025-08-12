@@ -11,6 +11,15 @@ form {
     border: 6px solid var(--secondary-color);
     max-width: 1200px;
     border-radius: 15px;
+    padding: 1%; 
+}
+
+form > label,
+form > input,
+form > textarea {
+    display: block;
+    width: 100%;
+    margin: 1% 1% 1% 0%;
 }
 
 textarea {
@@ -23,10 +32,13 @@ input:focus {
     background-color: lightgoldenrodyellow;
 }
 
-button > submit {
+#form-button {
+    display: block;
+    margin-left: auto;
     background-color: var(--primary-color);
+    color: white;
 }
 
-button > submit:hover {
+form button:hover {
     background-color: var(--secondary-color);
 }

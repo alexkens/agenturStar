@@ -31,7 +31,26 @@
 
        <h1>Kontakt</h1>
 
-       <form action=""></form>
+       <form action="submit-page" method="get">
+
+            <label for="firstname">Vorname: *</label>
+            <input type="text" name="firstname" required placeholder="Vorname eintragen" />
+
+            <label for="lastname">Nachname: *</label>
+            <input type="text" name="lastname" required placeholder="Nachname eintragen"/>
+    
+            <label for="email">Email Adresse: *</label>
+            <input type="email" name="email" required placeholder="beispiel@beispiel.de"/>
+    
+            <label for="phone">Telefon:</label>
+            <input type="tel" name="phone" id="phone" pattern="0-[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder="0-30-1234-5678" />
+      
+            <label for="message">Nachricht: *</label>
+            <textarea id="message" name="message" required rows="4" cols="50" placeholder="Bitte Nachricht eintragen"></textarea>   
+
+        <button id="form-button" type="submit" value="">Senden!</button>
+
+       </form>
 
     </div>
     
