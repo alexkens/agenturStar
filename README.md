@@ -1,3 +1,3 @@
 # Agentur Star
 
-Portfolio Projekt mit reinem HTML und CSS.
+Portfolio Projekt mit HTML, CSS und Javascript.

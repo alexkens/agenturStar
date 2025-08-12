@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agentur Star - Bildergalerie</title>
     <link rel="icon" type="images/x-icon" href="/images/icons8-star-color-16.png">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="alternate stylesheet" href="darkmode.css">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
 </head>
 
 <body id="top">
 
-    <img src="images/star_logo.png" width="10%" height="10%">
+    <a href="index.html"><img src="images/star_logo.png" width="10%" height="10%"></a>
 
     <nav>
         <a href="index.html">Startseite</a>
@@ -29,7 +29,9 @@
 
     <div class="gallery">
 
+        <h1>Bildergalerie</h1>
 
+        <div id="image_container"></div>
 
     </div>
     
@@ -44,5 +46,27 @@
         <a href="#top">nach oben</a>
     </footer>
 </body>
+<script>
+
+    const image_container = document.getElementById("image_container");
+
+    const arr = [
+        "original.jfif",
+        "sponge_2.png",
+        "sponge_3.png",
+        "sponge_4.png",
+        "sponge_5.png",
+        "sponge_6.png"
+    ];
+
+    for(let i=0; i < arr.length; i++) {
+        let img = new Image();
+        img.src = `images/gallery_images/${arr[i]}`;
+        image_container.appendChild(img);
+    }
+    
+    
+
+</script>
 </html>
 

@@ -1,4 +1,26 @@
+:root {
+    --primary-color: #004aad;
+    --secondary-color: goldenrod;
+    --tertiary-color: #333333;
+    --main-font-family: arial, sans-serif;
+    --body-bg-color: rgb(240,240,240);
+}
+
 p {
     color:black;
 
+}
+
+ul li {
+    list-style-type: none;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid goldenrod;
+    margin-top: 20px;
+    padding: 10px 0px 10px 0px;
+}
+
+.services {
+    margin-left: 10px;
 }

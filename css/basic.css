@@ -29,21 +29,21 @@ nav, footer {
     background-color: var(--primary-color);
 }
 
-nav > a,
-footer > a, p {
+nav > a {
     font-size: 25px;
     color: var(--secondary-color);
+    margin: 1%;
+}
 
+footer > a,
+footer > p {
+    color: var(--secondary-color);
     margin: 1%;
 }
 
 nav > a:hover,
 footer > a:hover {
     color: white;
-}
-
-footer > p {
-    color: var(--secondary-color);
 }
 
 h1 {
