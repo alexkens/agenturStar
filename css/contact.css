@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #004aad;
+    --secondary-color: goldenrod;
+    --tertiary-color: #333333;
+    --main-font-family: arial, sans-serif;
+    --body-bg-color: rgb(240,240,240);
+}
+
+form {
+    background-color: #F2F7F9;
+    border: 6px solid var(--secondary-color);
+    max-width: 1200px;
+    border-radius: 15px;
+}
+
+textarea {
+    font-size: 15px;
+    border: 1px solid #CEE1E8;
+}
+
+input:focus {
+    border: 1px solid var(--primary-color);
+    background-color: lightgoldenrodyellow;
+}
+
+button > submit {
+    background-color: var(--primary-color);
+}
+
+button > submit:hover {
+    background-color: var(--secondary-color);
+}
