@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #004aad;
+    --secondary-color: goldenrod;
+    --tertiary-color: #333333;
+    --main-font-family: arial, sans-serif;
+    --body-bg-color: rgb(240,240,240);
+}
+
+.team {
+    margin: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 0px 20px 20px 20px;
+}
+
+table, th, td {
+    border: 1px solid var(--primary-color);
+    border-collapse: collapse;
+}
+
+table td:first-child {
+    font-weight: bold;
+}
