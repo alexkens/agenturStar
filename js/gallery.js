@@ -9,8 +9,17 @@ const image_container = document.getElementById("image_container");
         "sponge_6.png"
     ];
 
+    const arr2 = [
+        "berlin.jpg",
+        "bridge.jpg",
+        "herbst.jpg",
+        "loewe.jpg",
+        "rose.jpg",
+        "schnee.jpg"
+    ]
+
     for(let i=0; i < arr.length; i++) {
         let img = new Image();
-        img.src = `images/gallery_images/${arr[i]}`;
+        img.src = `images/bilder/${arr2[i]}`;
         image_container.appendChild(img);
     }
