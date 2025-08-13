@@ -13,7 +13,7 @@
 
 <body id="top">
 
-    <a href="index.html"><img src="images/star_logo.png" width="10%" height="10%"></a>
+    <a href="index.html"><img src="images/webagentur-star-logo.png" width="10%" height="10%"></a>
 
     <nav>
         <a href="index.html">Startseite</a>
@@ -32,35 +32,28 @@
 
        <h1>Kontakt</h1>
 
-       <form action="" method="get">
+       <form action="" onsubmit="formFunction(event)" method="get">
 
             <label for="firstname">Vorname: *</label>
-            <input type="text" name="firstname" required placeholder="Vorname eintragen" />
+            <input type="text" name="firstname" required placeholder="Vorname eintragen" value="Bob" />
 
             <label for="lastname">Nachname: *</label>
-            <input type="text" name="lastname" required placeholder="Nachname eintragen"/>
+            <input type="text" name="lastname" required placeholder="Nachname eintragen" value="The Builder"/>
     
             <label for="email">Email Adresse: *</label>
-            <input type="email" name="email" required placeholder="beispiel@beispiel.de"/>
+            <input type="email" name="email" required placeholder="beispiel@beispiel.de" value="bob@bobmail.com"/>
     
             <label for="phone">Telefon:</label>
-            <input type="tel" name="phone" id="phone" pattern="0-[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder="0-30-1234-5678" />
+            <input type="tel" name="phone" id="phone" pattern="0-[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder="0-30-1234-5678" value="0-30-1234-5678"/>
       
             <label for="message">Nachricht: *</label>
             <textarea id="message" name="message" required rows="4" cols="50" placeholder="Bitte Nachricht eintragen"></textarea>   
 
-            <button id="form-button" type="submit"><b>Senden!</b></button>
+            <button id="form-button" type="onclick"><b>Senden!</b></button>
 
        </form>
 
        <div id="response"></div>
-
-       <form action="select-option-form" method="get">
-
-            <option></option>
-            <select></select>
-
-       </form>
 
     </div>
     
