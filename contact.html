@@ -8,6 +8,7 @@
     <link rel="icon" type="images/x-icon" href="/images/icons8-star-color-16.png">
     <link rel="stylesheet" type="text/css" href="css/basic.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <script src="js/contact-form-button.js" defer></script>
 </head>
 
 <body id="top">
@@ -27,11 +28,11 @@
     </nav>
 
 
-    <div class="contact">
+    <div class="contact" style="margin: 10px;">
 
        <h1>Kontakt</h1>
 
-       <form action="submit-page" method="get">
+       <form action="" method="get">
 
             <label for="firstname">Vorname: *</label>
             <input type="text" name="firstname" required placeholder="Vorname eintragen" />
@@ -48,7 +49,16 @@
             <label for="message">Nachricht: *</label>
             <textarea id="message" name="message" required rows="4" cols="50" placeholder="Bitte Nachricht eintragen"></textarea>   
 
-        <button id="form-button" type="submit" value="">Senden!</button>
+            <button id="form-button" type="submit"><b>Senden!</b></button>
+
+       </form>
+
+       <div id="response"></div>
+
+       <form action="select-option-form" method="get">
+
+            <option></option>
+            <select></select>
 
        </form>
 

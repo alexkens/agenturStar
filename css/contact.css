@@ -7,6 +7,7 @@
 }
 
 form {
+    margin: auto;
     background-color: #F2F7F9;
     border: 6px solid var(--secondary-color);
     max-width: 1200px;
@@ -35,10 +36,11 @@ input:focus {
 #form-button {
     display: block;
     margin-left: auto;
+    padding: 1.5% 3.5%;
     background-color: var(--primary-color);
     color: white;
 }
 
-form button:hover {
+#form-button:hover {
     background-color: var(--secondary-color);
 }
