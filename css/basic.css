@@ -23,9 +23,30 @@ body {
 
 nav ul {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     list-style-type: none;
+    padding: 0px;
+    width: 60%;
+}
+
+nav li > a,
+nav li {
+    font-size: 25px;
+    color: var(--secondary-color);
+    margin: 1%;
+    background-color: var(--primary-color);
+}
+
+.link {
+    display: block;
+}
+
+nav input {
+    display: none;
+}
+
+nav label[for="toggle-btn"] {
+    display: none;
 }
 
 #logo {
@@ -53,13 +74,6 @@ footer {
     justify-content: center;
 
     background-color: var(--primary-color);
-}
-
-nav li > a,
-nav li {
-    font-size: 25px;
-    color: var(--secondary-color);
-    margin: 1%;
 }
 
 footer > a,
@@ -99,9 +113,6 @@ h3 {
         height: 25px;
         width: 50px;
     }
-}
-
-@media(max-width: 800px) {
     h1 {
         font-size: 25px;
     }
@@ -114,6 +125,24 @@ h3 {
 }
 
 /* Hamburger menu */
-@media(max-width: 600px) {
-    
+@media(max-width: 800px) {
+    nav {
+        padding: 10px 15px;
+    }
+    nav ul {
+       display: none;
+       flex-direction: column;
+    }
+    nav ul li a {
+        text-decoration: none;
+    }
+    nav ul .vertical-line {
+        display: none;
+    }
+    #toggle-btn:checked ~ ul {
+        display: inline;
+    }
+    nav label[for="toggle-btn"] {
+        display: block;
+    }
 }
