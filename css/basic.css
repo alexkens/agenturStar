@@ -21,7 +21,33 @@ body {
     margin: 2% auto;
 }
 
-nav, footer {
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#logo {
+    position: absolute;
+    left: 0rem;
+    
+}
+
+#logo img {
+    height: 75px;
+    width: 80px;
+}
+
+
+nav {
+    background-color: var(--primary-color);
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,8 +55,8 @@ nav, footer {
     background-color: var(--primary-color);
 }
 
-nav > a,
-nav > p {
+nav li > a,
+nav li {
     font-size: 25px;
     color: var(--secondary-color);
     margin: 1%;
@@ -57,4 +83,37 @@ h1, h2 {
 
 h3 {
     color: var(--secondary-color)
+}
+
+@media(max-width: 800px) {
+    nav ul {
+        margin: 5px;
+    }
+    nav {
+        padding: 1px;
+    }
+    nav li a, nav li {
+        font-size: 12px;
+    }
+    #logo img {
+        height: 25px;
+        width: 50px;
+    }
+}
+
+@media(max-width: 800px) {
+    h1 {
+        font-size: 25px;
+    }
+    h2, h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+/* Hamburger menu */
+@media(max-width: 600px) {
+    
 }
